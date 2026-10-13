@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* ============================================================
+   鉄板焼ケルン 川越 — カラーテーマ
+   共通の構造（css/style.css）を使い、色だけ差し替える。
+   背景：ワインレッド（ケルン様ご指定 #932e44 ／ RGB 147,46,68）／ 差し色：白
+   style.css の直後に読み込むこと。
+============================================================ */
+
+:root{
+  --bg:        #932e44;   /* ワインレッド（ケルン様ご指定のメインカラー） */
+  --bg-2:      #852a3e;   /* 少し沈めた面（カード・帯） */
+  --bg-3:      #7a2639;
+  --ink:       #f8f3f0;   /* 白 */
+  --ink-mut:   #f0dfe2;
+  /* 差し色。変数名は style.css と共通にして構造を崩さない（値だけ白系に） */
+  --gold:      #ffffff;
+  --gold-deep: #f3e3e6;
+  --gold-line: rgba(255,255,255,.34);
+  --red:       #ffc2cc;   /* 入力エラーの枠線（ワインレッド上で見えるよう淡色に） */
+}
+
+/* --- 背景色が直接書かれている箇所の差し替え --- */
+::-webkit-scrollbar-track{ background:#5e1c2b; }
+::-webkit-scrollbar-thumb{ background:#b24a62; }
+
+.loader{ background:#5e1c2b; }
+.loader__curtain{ background:#5e1c2b; }
+
+.gopop{ background:radial-gradient(58% 58% at 50% 50%, rgba(94,28,43,.66) 0%, rgba(94,28,43,0) 72%); }
+
+.header.is-scrolled{
+  background:rgba(94,28,43,.88);
+  box-shadow:0 1px 0 rgba(255,255,255,.18);
+}
+
+.hero__shade{
+  background:
+    radial-gradient(62% 58% at 50% 45%, rgba(94,28,43,.58) 0%, rgba(94,28,43,0) 66%),
+    linear-gradient(0deg,   rgba(147,46,68,.94) 0%, rgba(147,46,68,0) 30%),
+    linear-gradient(180deg, rgba(94,28,43,.55) 0%, rgba(94,28,43,0) 22%),
+    linear-gradient(90deg,  rgba(94,28,43,.35) 0%, rgba(94,28,43,0) 30%, rgba(94,28,43,0) 70%, rgba(94,28,43,.35) 100%);
+}
+.page-hero__shade{
+  background:
+    radial-gradient(70% 70% at 50% 45%, rgba(147,46,68,.28) 0%, rgba(147,46,68,.86) 100%),
+    linear-gradient(180deg, rgba(147,46,68,.74) 0%, rgba(147,46,68,0) 34%, rgba(147,46,68,.96) 100%);
+}
+.pre-open{ background:rgba(94,28,43,.72); }
+.banner__bg::after{ background:rgba(94,28,43,.55); }
+.insta__item::after{ background:rgba(94,28,43,.35); }
+.cta-band{ background:linear-gradient(180deg, rgba(122,38,57,.6), rgba(147,46,68,1)); }
+
+@media (max-width: 960px){
+  .gnav{ background:rgba(94,28,43,.97); }
+}
+
+/* --- ボタン：反転時の文字色をワインレッドに --- */
+.btn:hover,
+.btn--gold,
+.btn--gold:hover,
+.btn--line:hover,
+.crosslink:hover .crosslink__btn,
+.ecard:hover .ecard__btn{ color:#932e44; }
+.btn--gold::before{ background:#ffffff; }
+
+/* --- 金の細罫を白罫に --- */
+.pcard,
+.minimum,
+.crosslink,
+.mgroup--accent{
+  background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,0));
+}
+.mitem__leader,
+.course__head::after,
+.minimum__list > div::after{
+  background-image:linear-gradient(90deg, rgba(255,255,255,.34) 0 3px, transparent 3px 7px);
+}
+.mitem,.course,.wine{ border-bottom-color:rgba(255,255,255,.18); }
+.section__ghost{ -webkit-text-stroke:1px rgba(255,255,255,.09); }
+.pillar__num,.pcard__num{ -webkit-text-stroke:1px rgba(255,255,255,.34); }
+.marquee__track span{ -webkit-text-stroke:.6px rgba(255,255,255,.72); }
+.hero__watermark{ -webkit-text-stroke:1px rgba(255,255,255,.14); }
+.dish__num{ -webkit-text-stroke:1px rgba(255,255,255,.5); }
+
+/* --- フィルムグレインは控えめに（ワインレッド上では目立つため） --- */
+.grain{ opacity:.035; }
+
+/* --- ローディング：ロゴ画像が無いため文字組みで代用 --- */
+.koln-loader{
+  display:flex; flex-direction:column; align-items:center; gap:14px;
+  text-align:center;
+}
+.koln-loader__ja{
+  font-size:clamp(14px,2vw,19px); letter-spacing:.5em; padding-left:.5em;
+  color:var(--ink-mut);
+}
+.koln-loader__name{
+  font-size:clamp(46px,9vw,96px); font-weight:600; letter-spacing:.2em;
+  padding-left:.2em; line-height:1;
+}
+.koln-loader__en{
+  font-family:var(--serif-en); font-style:italic;
+  font-size:clamp(11px,1.5vw,15px); letter-spacing:.4em; padding-left:.4em;
+  color:var(--ink-mut);
+}
+
+/* --- style.css に直接書かれた黒系の色を、ケルンのワインレッドに差し替え --- */
+.footer{ background:#5e1c2b; }
+.form__input{ background:rgba(94,28,43,.55); border-color:rgba(255,255,255,.26); }
+.form__input:focus{ box-shadow:0 0 0 3px rgba(255,255,255,.16); }
+.hero__badges li,
+.hero__reserve,
+.banner__inner,
+.access__mapnote{ background:rgba(94,28,43,.72); }
+.hero__reserve:hover strong,
+.fixed-cta__btn--reserve,
+.fixed-cta__btn--reserve:hover{ color:#932e44; }
+
+/* --- 「準備中」の札：ワインレッド上でも読めるように --- */
+.wip{ color:var(--ink-mut); border-color:rgba(255,255,255,.4); }
+.req{ color:#fff; border-color:rgba(255,255,255,.55); background:rgba(255,255,255,.12); }

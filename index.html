@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鉄板焼ケルン 川越 | Teppanyaki KÖLN Kawagoe</title>
+<meta name="description" content="埼玉県川越市の鉄板焼レストラン「鉄板焼ケルン」。和牛と旬の食材を、目の前の鉄板で。">
+<meta name="robots" content="noindex,nofollow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- 共通の構造CSS → ケルンの色を上書き -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/koln.css">
+</head>
+<body>
+
+<!-- ======= Loader ======= -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <p class="koln-loader">
+      <span class="koln-loader__ja">鉄板焼</span>
+      <span class="koln-loader__name">ケルン</span>
+      <span class="koln-loader__en">Teppanyaki KÖLN</span>
+    </p>
+  </div>
+  <div class="loader__curtain"></div>
+</div>
+
+<!-- ======= Grain overlay ======= -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ======= Header ======= -->
+<header class="header" id="header">
+  <a class="header__logo" href="#top" aria-label="鉄板焼ケルン">
+    <span class="header__logotext">
+      <span class="header__ja">鉄板焼 ケルン</span>
+      <span class="header__en">Teppanyaki KÖLN</span>
+    </span>
+  </a>
+
+  <nav class="gnav" id="gnav" aria-label="グローバルナビゲーション">
+    <ul class="gnav__list">
+      <li><a href="#top" aria-current="page"><span class="gnav__ja">トップ</span><span class="gnav__en">Top</span></a></li>
+      <li><a href="#about"><span class="gnav__ja">コンセプト</span><span class="gnav__en">Concept</span></a></li>
+      <li><a href="#menu"><span class="gnav__ja">メニュー・ドリンク</span><span class="gnav__en">Menu &amp; Drink</span></a></li>
+      <li><a href="#access"><span class="gnav__ja">アクセス</span><span class="gnav__en">Access</span></a></li>
+      <li><a href="#contact"><span class="gnav__ja">お問い合わせ</span><span class="gnav__en">Contact</span></a></li>
+    </ul>
+    <a class="btn btn--gold gnav__reserve" href="#contact">ご予約</a>
+  </nav>
+
+  <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="gnav" aria-label="メニューを開く">
+    <span></span><span></span>
+  </button>
+</header>
+
+<!-- ======= Hero ======= -->
+<section class="hero" id="top">
+  <div class="hero__bg">
+    <img src="assets/img/shot/cooking-teppan.jpg" alt="鉄板で焼き上げる和牛" class="hero__img" id="heroImg">
+  </div>
+  <div class="hero__smoke" id="heroSmoke" aria-hidden="true">
+    <img src="assets/img/smoke.png" alt="" style="--x:58%; --w:340px; --t:14s; --d:0s;   --o:.22;">
+    <img src="assets/img/smoke.png" alt="" style="--x:72%; --w:430px; --t:18s; --d:-6s;  --o:.18;">
+    <img src="assets/img/smoke.png" alt="" style="--x:86%; --w:300px; --t:16s; --d:-11s; --o:.20;">
+    <img src="assets/img/smoke.png" alt="" style="--x:47%; --w:390px; --t:20s; --d:-3s;  --o:.16;">
+  </div>
+  <div class="hero__shade" aria-hidden="true"></div>
+
+  <h1 class="hero__brand">
+    <span class="hero__brand-kicker">鉄板焼</span>
+    <span class="hero__brand-name">ケルン</span>
+    <span class="hero__brand-en">Teppanyaki KÖLN&nbsp;&nbsp;Kawagoe</span>
+  </h1>
+
+  <div class="scroll-cue" aria-hidden="true"><span>Scroll</span><i></i></div>
+</section>
+
+<!-- ======= ご予約・お問い合わせ ======= -->
+<section class="pre-open" id="reserve">
+  <div class="pre-open__inner">
+    <p class="kicker reveal">Information</p>
+    <h2 class="pre-open__title reveal">ご予約のご案内</h2>
+    <div class="pre-open__cta reveal">
+      <div class="cta-item">
+        <a class="btn btn--gold btn--lg" href="tel:0492251581">お電話でご予約</a>
+        <span class="cta-note">049-225-1581</span>
+      </div>
+      <div class="cta-item">
+        <a class="btn btn--line btn--lg" href="#contact">お問い合わせ</a>
+        <span class="cta-note">フォームからお送りいただけます</span>
+      </div>
+    </div>
+    <ul class="pre-open__badges reveal">
+      <li><strong>川越</strong><span>Kawagoe</span></li>
+      <li><strong>鉄板焼</strong><span>Teppanyaki</span></li>
+      <li><strong>和牛</strong><span>Wagyu</span></li>
+      <li><strong>ケルン</strong><span>since —</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ======= Marquee ======= -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track" id="marqueeTrack">
+    <span>TEPPANYAKI KÖLN&nbsp;&nbsp;—&nbsp;&nbsp;KAWAGOE&nbsp;&nbsp;—&nbsp;&nbsp;WAGYU · WINE · SAKE&nbsp;&nbsp;—&nbsp;&nbsp;</span>
+  </div>
+</div>
+
+<!-- ======= About ======= -->
+<section class="about section" id="about">
+  <p class="section__ghost" aria-hidden="true">口上</p>
+  <div class="about__grid">
+    <div class="about__text">
+      <p class="kicker reveal">About</p>
+      <h2 class="heading reveal">和牛と旬を、<br>目の前の鉄板で。</h2>
+      <div class="about__body reveal">
+        <p class="wip">準備中</p>
+      </div>
+      <p class="about__more reveal">
+        <a class="btn btn--line" href="#menu">メニューを見る</a>
+      </p>
+    </div>
+    <div class="about__photos">
+      <figure class="about__photo about__photo--main reveal-img" data-parallax="24">
+        <img src="assets/img/shot/dish-wagyu-plate.jpg" alt="和牛と焼き野菜" loading="lazy">
+      </figure>
+      <figure class="about__photo about__photo--sub reveal-img" data-parallax="-16">
+        <img src="assets/img/shot/drink-pouring.jpg" alt="グラスにワインを注ぐ" loading="lazy">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ======= メニュー・ドリンク ======= -->
+<section class="section menu-sec" id="menu">
+  <p class="section__ghost" aria-hidden="true">献立</p>
+  <div class="section__head">
+    <p class="kicker reveal">Menu &amp; Drink</p>
+    <h2 class="heading reveal">メニュー・ドリンク</h2>
+  </div>
+
+  <div class="shots reveal">
+    <figure class="shots__item reveal-img"><img src="assets/img/shot/dish-appetizer.jpg" alt="前菜の一皿" loading="lazy"></figure>
+    <figure class="shots__item reveal-img"><img src="assets/img/shot/dish-scallop.jpg" alt="帆立貝の焼き上げ" loading="lazy"></figure>
+    <figure class="shots__item reveal-img"><img src="assets/img/shot/dish-abalone.jpg" alt="鮑の焼き上げ" loading="lazy"></figure>
+    <figure class="shots__item reveal-img"><img src="assets/img/shot/beef-section.jpg" alt="和牛の断面" loading="lazy"></figure>
+  </div>
+
+  <div class="mgroup reveal">
+    <div class="mgroup__head"><h3 class="mgroup__title">コース</h3></div>
+    <p class="wip">準備中</p>
+  </div>
+
+  <div class="mgroup reveal">
+    <div class="mgroup__head"><h3 class="mgroup__title">お飲み物</h3></div>
+    <p class="wip">準備中</p>
+  </div>
+</section>
+
+<!-- ======= Access ======= -->
+<section class="access section" id="access">
+  <p class="section__ghost" aria-hidden="true">道順</p>
+  <div class="section__head">
+    <p class="kicker reveal">Access</p>
+    <h2 class="heading reveal">アクセス</h2>
+  </div>
+  <div class="access__grid">
+    <div class="access__map reveal-img">
+      <iframe
+        src="https://maps.google.com/maps?q=%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%B7%9D%E8%B6%8A%E5%B8%82%E8%8F%85%E5%8E%9F%E7%94%BA23-1&z=16&output=embed"
+        title="鉄板焼ケルン アクセスマップ" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <dl class="access__table reveal">
+      <div><dt>店名</dt><dd>鉄板焼ケルン　川越</dd></div>
+      <div><dt>住所</dt><dd>〒350-0046<br>埼玉県川越市菅原町23-1 アトランタビル2F</dd></div>
+      <div><dt>TEL</dt><dd>049-225-1581（FAX 049-225-1585）</dd></div>
+      <div><dt>営業時間</dt><dd><span class="wip">準備中</span></dd></div>
+      <div><dt>定休日</dt><dd><span class="wip">準備中</span></dd></div>
+      <div><dt>席</dt><dd><span class="wip">準備中</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ======= Contact ======= -->
+<section class="contact section" id="contact">
+  <p class="section__ghost" aria-hidden="true">文</p>
+  <div class="section__head">
+    <p class="kicker reveal">Contact</p>
+    <h2 class="heading reveal">お問い合わせ</h2>
+    <p class="lead reveal">ご予約・ご相談は、お電話またはこちらのフォームからお送りください。</p>
+  </div>
+
+  <form class="form reveal" id="contactForm" novalidate>
+    <div class="form__row">
+      <label class="form__label" for="fName">お名前 <em class="req">必須</em></label>
+      <input class="form__input" type="text" id="fName" name="name" autocomplete="name" required>
+      <p class="form__error" data-error-for="fName">お名前を入力してください。</p>
+    </div>
+    <div class="form__row">
+      <label class="form__label" for="fEmail">メールアドレス <em class="req">必須</em></label>
+      <input class="form__input" type="email" id="fEmail" name="email" autocomplete="email" required>
+      <p class="form__error" data-error-for="fEmail">メールアドレスの形式を確認してください（例：name@example.com）。</p>
+    </div>
+    <div class="form__row">
+      <label class="form__label" for="fTel">電話番号 <em class="req req--opt">任意</em></label>
+      <input class="form__input" type="tel" id="fTel" name="tel" autocomplete="tel" inputmode="numeric">
+      <p class="form__error" data-error-for="fTel">電話番号は数字のみで入力してください（例：09012345678）。</p>
+    </div>
+    <div class="form__row">
+      <label class="form__label" for="fBody">お問い合わせ内容 <em class="req">必須</em></label>
+      <textarea class="form__input form__input--area" id="fBody" name="body" rows="6" required></textarea>
+      <p class="form__error" data-error-for="fBody">お問い合わせ内容を入力してください。</p>
+    </div>
+    <div class="form__submit">
+      <button class="btn btn--gold btn--lg" type="submit" id="submitBtn" disabled>送信する</button>
+      <p class="form__hint" id="formHint">必須項目を入力すると送信できます。</p>
+    </div>
+  </form>
+</section>
+
+<!-- ======= Footer ======= -->
+<footer class="footer">
+  <div class="footer__upper">
+    <div class="footer__brand">
+      <p class="footer__name">株式会社大都会</p>
+      <p class="footer__store">鉄板焼ケルン　川越<br>埼玉県川越市菅原町23-1 アトランタビル2F</p>
+    </div>
+
+    <dl class="footer__company">
+      <div><dt>会社名</dt><dd>株式会社大都会</dd></div>
+      <div><dt>代表者</dt><dd>伊勢﨑 正雄</dd></div>
+      <div><dt>所在地</dt><dd>〒350-0046 埼玉県川越市菅原町23-1 アトランタビル2F</dd></div>
+      <div><dt>TEL</dt><dd>049-225-1581（FAX 049-225-1585）</dd></div>
+      <div><dt>店舗</dt><dd>鉄板焼ケルン　川越 ／ 鉄板焼 大都会 東京駅八重洲</dd></div>
+      <div><dt>事業内容</dt><dd>飲食店の経営</dd></div>
+    </dl>
+
+    <nav class="footer__nav" aria-label="フッターナビゲーション">
+      <a href="#about">コンセプト</a>
+      <a href="#menu">メニュー・ドリンク</a>
+      <a href="#access">アクセス</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </div>
+  <p class="footer__copy">© Teppanyaki KÖLN · Kawagoe</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
